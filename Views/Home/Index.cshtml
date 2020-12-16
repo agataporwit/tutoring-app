@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1 class="display-4">Success in the classroom starts with you.</h1>
+            <p>
+                Connect with an expansive network of students and tutors across the country.
+                Search by subject and grade level or even start your own topic of study today!
+            </p>
+            <div align="center">
+                <a class="btn btn-primary" asp-area="Identity" asp-page="/Account/Register">Get Started</a>
+            </div>
+        </div>
+        <div class="col-sm">
+            <img src="~/img/teacher.jpg" width="500" alt="Hand holding smartphone with tutor on screen" />
+
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm">
+            <h1 class="display-4">Our Goal</h1>
+            <p>
+                We are a group of dedicated and passionate tutors,
+                who are here to help you achieve your academic goals.
+            </p>
+        </div>
+        <div class=" col-sm">
+            <img src="~/img/20644.jpg" alt="teacher" width="500" />
+        </div>
+
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-sm">
+        <h1 class="display-4">Testimonials</h1>
+
+        <p>
+            <b>English</b><br />
+            "My tutoring session went very well. I was pleased with all of the tips and personalized information given to help my specific needs."
+            <br />
+            —Person1
+        </p>
+
+    </div>
+    <div class="col -sm">
+
+        <img src="~/img/person1.png " alt="person1" width="150" />
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-sm">
+
+        <p>
+            <b>Math</b><br />
+            "My tutoring session went very well. I was pleased with all of the tips and personalized information given to help my specific needs."
+            <br />
+            —Person1
+        </p>
+
+    </div>
+    <div class="col -sm">
+
+        <img src="~/img/person3.png " alt="person2" width="150" />
+    </div>
+
+</div>
+<hr />
+<div class="row justify-content-center">
+    <div class="text-center">
+        <h1 class="display-4">Today's Quote</h1>
+        <p>@ViewData["QuoteString"]</p>
+        <p class="font-weight-bold">@ViewData["QuoteAuthor"]</p>
+    </div>
+</div>
